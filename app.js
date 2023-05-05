@@ -33,6 +33,7 @@ let counter = [];
 let myName = prompt("Enter your name");
 
 function guessMe(num) {
+
   let attempt = Number(prompt("What is your number?"));
   if (num === attempt) {
     alert(`That's Correct ${myName}! Your previous guesses were ${[...counter]} \nYou got it in ${counter.length} tries!`);
