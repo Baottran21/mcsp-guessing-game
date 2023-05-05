@@ -1,12 +1,10 @@
 let secret = Math.floor(Math.random() * 100);
 let counter = 0;
-function typeName(){
-    prompt('Enter your name')
-}
-typeName();
-let myName = typeName;
+
+let myName = prompt('Enter your name');
 
 function guessMe(num) {
+
   let attempt = Number(prompt("What is your number?"));
   if (num === attempt) {
     alert(`Correct, ${myName}! It only took you ${counter} guesses!`);
